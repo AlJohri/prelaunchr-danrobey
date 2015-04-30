@@ -22,7 +22,7 @@ gem "daemons"
 
 gem 'capistrano', '~> 3.3.0'
 gem 'capistrano-rails', '~> 1.1'
-gem 'capistrano-passenger'
+gem 'capistrano-passenger', '0.0.2'
 gem 'capistrano3-delayed-job', '~> 1.0'
 
 gem "letter_opener", :group => :development
