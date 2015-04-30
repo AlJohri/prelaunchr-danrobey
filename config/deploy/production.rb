@@ -15,7 +15,7 @@
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'web473.webfaction.com', user: 'brahmadpk', roles: %w{web app db}
+server 'web380.webfaction.com', user: 'danrobey', roles: %w{web app db}
 
 
 # Custom SSH Options
