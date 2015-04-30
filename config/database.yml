@@ -18,5 +18,9 @@ test:
 
 production:
   adapter: postgresql
-  database: prelaunchr
+  database: <%= ENV['DATABASE_NAME'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   host: localhost
+  pool: 5
+  timeout: 5000
