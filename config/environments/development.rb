@@ -1,11 +1,3 @@
-silence_warnings do
-    begin
-        require 'pry'
-        IRB = Pry
-    rescue LoadError
-    end
-end
-
 Prelaunchr::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -45,6 +37,8 @@ Prelaunchr::Application.configure do
 
 
   # For mailer configs
-  config.action_mailer.perform_deliveries = false
+  config.action_mailer.default_url_options = { :host => 'http://localhost:3000' }
+  config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.raise_delivery_errors = true
+
 end
