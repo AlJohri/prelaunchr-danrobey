@@ -14,6 +14,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'aweber'
 gem 'figaro'
 
 gem 'delayed_job_active_record'

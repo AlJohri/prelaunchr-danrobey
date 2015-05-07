@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
     validates :referral_code, :uniqueness => true
 
     before_create :create_referral_code
-    after_create :send_welcome_email
+    after_create :process_user
 
     REFERRAL_STEPS = [
         {
@@ -37,6 +37,21 @@ class User < ActiveRecord::Base
         }
     ]
 
+    def process_user
+        UserMailer.delay.signup_email(self)
+        self.delay.add_to_aweber
+    end
+
+    def add_to_aweber
+      oauth = AWeber::OAuth.new(ENV['AWEBER_APP_CONSUMER_KEY'], ENV['AWEBER_APP_CONSUMER_SECRET'])
+      oauth.authorize_with_access(ENV['AWEBER_APP_ACCESS_TOKEN'], ENV['AWEBER_APP_ACCESS_SECRET'])
+      aweber = AWeber::Base.new(oauth)
+      list_id = 3870558
+      new_subscriber = {}
+      new_subscriber["email"] = self.email
+      aweber.account.lists[list_id].subscribers.create(new_subscriber)
+    end
+
     private
 
     def create_referral_code
@@ -51,7 +66,4 @@ class User < ActiveRecord::Base
         self.referral_code = referral_code
     end
 
-    def send_welcome_email
-        UserMailer.delay.signup_email(self)
-    end
 end
