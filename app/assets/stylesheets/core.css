@@ -344,7 +344,7 @@ html.home{
 #refer .share-wrap .why{
 	font-size: 17px;
 	color: #555556;
-	margin-top: 42px;
+	margin-top: 22px;
 }
 
 #refer .share-wrap .title{
@@ -444,7 +444,7 @@ html.home{
 }
 
 #refer .prizes .progress .mover .bar{
-	background: url(/assets/refer/progress-done.png) 0 0 repeat-x;
+	background: #00A8A9;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
@@ -490,8 +490,8 @@ html.home{
 #refer .prizes .products li.product{
 	height: 100%;
 	color: #074E6F;
-	width: 125px;
-	margin-right: 129px;
+	width: 150px;
+	margin-right: 95px;
 	float: left;
 	position: relative;
 }
@@ -500,12 +500,12 @@ html.home{
 	height: 30px;
 	width: 30px;
 	border-radius: 15px;
-	border: 1px solid #DAD9D2;
+	border: 1px solid #00A8A9;
 	text-align: center;
 	line-height: 30px;
-	color: #868282;
+	color: #FFF;
 	overflow: hidden;
-	background: #F1F0EE;
+	background: #00A8A9;
 	font-weight: bold;
 	margin: 0 auto;
 }
@@ -556,9 +556,9 @@ html.home{
 }
 
 #refer .prizes .products li.product:hover .circle{
-	color: #FFF;
-	background: #074E6F;
-	border-color: #074E6F;
+	color: #00A8A9;
+	background: #FFF;
+	border-color: #00A8A9;
 }
 
 #refer .prizes .products li.product .tooltip{
