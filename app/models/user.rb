@@ -15,25 +15,46 @@ class User < ActiveRecord::Base
             'count' => 5,
             "html" => "Basic Package",
             "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
+            "image" =>  ActionController::Base.helpers.asset_path("refer/basic.jpg"),
+            "description" => "<ul>
+                                <li>Program Manual</li>
+                                <li>Smart Phone App</li>
+                              </ul>"
         },
         {
             'count' => 10,
             "html" => "Silver Package",
             "class" => "three",
-            "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("refer/silver.jpg"),
+            "description" => "<ul>
+                                <li>Program Manual</li>
+                                <li>Smart Phone App</li>
+                                <li>One Hour Video</li>
+                              </ul>"
         },
         {
             'count' => 25,
             "html" => "Gold Package",
             "class" => "four",
-            "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("refer/silver.jpg"),
+            "description" => "<ul>
+                                <li>Program Manual</li>
+                                <li>Smart Phone App</li>
+                                <li>One Hour Video</li>
+                              </ul>
+                              <p>Your name will be listed on page one of the program manual as a contributer.</p>"
         },
         {
             'count' => 50,
             "html" => "Platinum Package",
             "class" => "five",
-            "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("refer/platinum.jpg"),
+            "description" => "<ul>
+                                <li>Apple Watch App Version</li>
+                                <li>Program Manual</li>
+                                <li>One Hour Video</li>
+                              </ul>
+                              <p>Your name will be listed on page one of the program manual as a contributer.</p>"
         }
     ]
 
