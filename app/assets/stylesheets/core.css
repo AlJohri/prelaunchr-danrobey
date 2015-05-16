@@ -46,7 +46,7 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 477px;
-	background: url(/assets/home/page1.jpg) center center no-repeat;
+	background: url(/assets/home/hero.jpg) center center no-repeat;
 	background-size: 1322px 477px;
 	overflow: hidden;
 	position: relative;
@@ -122,8 +122,8 @@ html.home{
 	width: 143px;
 	background: #00A8A9;
 	float: left;
-	height: 33px;
-	line-height: 33px;
+	height: 36px;
+	line-height: 36px;
 	color: #FFF;
 	font-size: 13px;
 	text-transform: uppercase;
