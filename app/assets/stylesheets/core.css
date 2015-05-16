@@ -11,7 +11,7 @@
  *= require reset
  *= require_self
  */
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 form{
 	margin-bottom: 0;
@@ -104,7 +104,7 @@ html.home{
 	margin: 15px 0;
 }
 
-p.byline.brandon::before {
+#home p.invite.byline.brandon::before {
   content: url(/assets/home/key.png);
 }
 
@@ -252,7 +252,7 @@ p.byline.brandon::before {
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: "Open Sans","Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -268,7 +268,7 @@ p.byline.brandon::before {
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #00a8a9;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -276,12 +276,10 @@ p.byline.brandon::before {
 }
 
 #refer .header .content{
-	width: 315px;
-	margin: 0 auto;
+  text-align: center;
 }
 
 #refer .header p{
-	float: left;
 	color: #FFF;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -289,7 +287,7 @@ p.byline.brandon::before {
 }
 
 #refer .header .byline{
-	font-size: 14px;
+	font-size: 24px;
 }
 
 #refer .header .logo{
@@ -306,7 +304,7 @@ p.byline.brandon::before {
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: #FFF;
 	height: 391px;
 	overflow: hidden;
 }
@@ -314,10 +312,9 @@ p.byline.brandon::before {
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
+	background: url(/assets/refer/mammoth.jpg) 0 0 no-repeat;
 	background-size: 610px 394px;
 	overflow: hidden;
-	margin-top: 15px;
 	float: left;
 }
 
@@ -332,6 +329,7 @@ p.byline.brandon::before {
 	letter-spacing: 4px;
 	text-align: center;
 	width: 284px;
+  display: none;
 }
 
 #refer .share-wrap{
@@ -340,13 +338,12 @@ p.byline.brandon::before {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 60px;
+	margin-right: 160px;
 }
 
 #refer .share-wrap .why{
-	font-size: 16px;
+	font-size: 17px;
 	color: #555556;
-	font-weight: bold;
 	margin-top: 42px;
 }
 
@@ -355,7 +352,7 @@ p.byline.brandon::before {
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #000;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
@@ -368,7 +365,7 @@ p.byline.brandon::before {
 }
 
 #refer .share-wrap .copy-link{
-	border: 1px solid #D1D0C7;
+	border: 2px solid #D1D0C7;
 	background: #FFF;
 	padding: 10px 0;
 	width: 320px;
@@ -378,8 +375,8 @@ p.byline.brandon::before {
 }
 
 #refer .share-wrap .social-links{
-	width: 120px;
-	height: 37px;
+	width: 128px;
+	height: 39px;
 	margin: 25px auto 0;
 	text-align: center;
 }
@@ -389,24 +386,24 @@ p.byline.brandon::before {
 }
 
 #refer .share-wrap .social-links .fb{
-	background: url(/assets/refer/fb.png);
-	background-size: 27px 27px;
-	width: 27px;
-	height: 27px;
+	background: url(/assets/refer/facebook.jpg);
+	background-size: 37px 37px;
+	width: 37px;
+	height: 37px;
 }
 
 #refer .share-wrap .social-links .twit{
-	background: url(/assets/refer/twit.png);
-	background-size: 27px 27px;
-	width: 27px;
-	height: 27px;
+	background: url(/assets/refer/twitter.jpg);
+	background-size: 37px 37px;
+	width: 37px;
+	height: 37px;
 }
 
 #refer .share-wrap .social-links .sep{
-	height: 28px;
+	height: 39px;
 	width: 1px;
 	background: #BAB9BA;
-	margin: 0 20px;
+	margin: 0 10px;
 }
 
 #refer .prizes{
