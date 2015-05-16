@@ -484,7 +484,7 @@ html.home{
 
 #refer .prizes .products li.title .rewards{
 	margin-top: 45px;
-	letter-spacing: 2px;
+  text-align: center;
 }
 
 #refer .prizes .products li.product{
