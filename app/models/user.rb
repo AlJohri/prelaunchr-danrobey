@@ -17,8 +17,8 @@ class User < ActiveRecord::Base
             "class" => "two",
             "image" =>  ActionController::Base.helpers.asset_path("refer/basic.jpg"),
             "description" => "<ul>
-                                <li>Program Manual</li>
-                                <li>Smart Phone App</li>
+                                <li>No Sacrifice Diet Book</li>
+                                <li>Smart Phone App Instant Access</li>
                               </ul>"
         },
         {
@@ -27,9 +27,9 @@ class User < ActiveRecord::Base
             "class" => "three",
             "image" => ActionController::Base.helpers.asset_path("refer/silver.jpg"),
             "description" => "<ul>
-                                <li>Program Manual</li>
-                                <li>Smart Phone App</li>
-                                <li>One Hour Video</li>
+                                <li>No Sacrifice Diet Book</li>
+                                <li>Smart Phone App Instant Access</li>
+                                <li>Fast Track One Hour Instruction Video</li>
                               </ul>"
         },
         {
@@ -37,29 +37,31 @@ class User < ActiveRecord::Base
             "html" => "Gold Package",
             "class" => "four",
             "image" => ActionController::Base.helpers.asset_path("refer/silver.jpg"),
-            "description" => "<ul>
-                                <li>Program Manual</li>
-                                <li>Smart Phone App</li>
-                                <li>One Hour Video</li>
+            "description" => '<ul>
+                                <li>No Sacrifice Diet Book</li>
+                                <li>Smart Phone App Instant Access</li>
+                                <li>Fast Track One Hour Video</li>
                               </ul>
-                              <p>Your name will be listed on page one of the program manual as a contributer.</p>"
+                              <p>Your name will be permanently featured in the first chapter of the "No Sacrifice Diet Book" as an official contributor.</p>'
         },
         {
             'count' => 50,
             "html" => "Platinum Package",
             "class" => "five",
             "image" => ActionController::Base.helpers.asset_path("refer/platinum.jpg"),
-            "description" => "<ul>
-                                <li>Apple Watch App Version</li>
-                                <li>Program Manual</li>
-                                <li>One Hour Video</li>
+            "description" => '<ul>
+                                <li>No Sacrifice Diet Book</li>
+                                <li>Smart Phone App Instant Access (Apple Watch Version)</li>
+                                <li>Fast Track One Hour Video </li>
+                                <li>Limited Edition Author Autographed PDF Version Of 
+The No Sacrifice Diet Book</li>
                               </ul>
-                              <p>Your name will be listed on page one of the program manual as a contributer.</p>"
+                              <p>Your name will be permanently featured in the first chapter of the "No Sacrifice Diet Book" as an official contributor, and featured on the company website.</p>'
         }
     ]
 
     def process_user
-        UserMailer.delay.signup_email(self)
+#        UserMailer.delay.signup_email(self)
         self.delay.add_to_aweber
     end
 

@@ -15,6 +15,8 @@
 
 form{
   margin-bottom: 0;
+  width: 411px;
+  margin: 0 auto;
 }
 
 .clearfix:before,
@@ -83,8 +85,8 @@ html.home{
 
 #home .form-wrap{
   height: 80px;
-  width: 411px;
-  margin: 23px auto 0;
+  width: 500px;
+  margin: 10px auto 0;
 }
 
 #home .form-wrap .key{
@@ -334,7 +336,7 @@ html.home{
 
 #refer .share-wrap{
   float: right;
-  width: 400px;
+  width: 430px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .13em;
@@ -587,7 +589,7 @@ html.home{
   color: #074E6F;
   width: 100%;
   font-weight: 500;
-  margin-top: 350px;
+  margin-top: 500px;
 }
 
 #refer .prizes p.place span{
