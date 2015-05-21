@@ -308,7 +308,7 @@ html.home{
 #refer .hero{
   background: #FFF;
   height: 391px;
-  overflow: hidden;
+  overflow: initial;
   width: 100%;
 }
 
