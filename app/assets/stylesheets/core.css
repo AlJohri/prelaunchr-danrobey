@@ -262,7 +262,7 @@ html.home{
 }
 
 #refer .page-content{
-  width: 1120px;
+  width: 100%;
   margin: 0 auto;
   z-index: 0;
   position: relative;
@@ -308,7 +308,6 @@ html.home{
 #refer .hero{
   background: #FFF;
   height: 391px;
-  overflow: initial;
   width: 100%;
 }
 
@@ -336,12 +335,12 @@ html.home{
 }
 
 #refer .share-wrap{
-  float: left;
+  float: right;
   width: 430px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .13em;
-  margin-left: 100px;
+  margin-right: 160px;
 }
 
 #refer .share-wrap .why{
