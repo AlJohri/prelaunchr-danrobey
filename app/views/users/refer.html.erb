@@ -41,7 +41,15 @@
         end
     }   
  %>
+
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
+        <% if referrals_count == 0 %>
+            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+        <% else %>
+            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+        <% end %>
+        <p class="check brandon">Keep checking</p>
+
     <div class="page-content">
         <p class="callout brandon">Here's How It Works:</p>
         <ul class="products clearfix">
@@ -75,11 +83,5 @@
 
         %>
 
-        <% if referrals_count == 0 %>
-            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
-        <% else %>
-            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
-        <% end %>
-        <p class="check brandon">Keep checking</p>
     </div>
 </div>

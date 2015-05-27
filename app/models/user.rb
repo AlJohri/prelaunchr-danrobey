@@ -61,7 +61,7 @@ The No Sacrifice Diet Book</li>
     ]
 
     def process_user
-#        UserMailer.delay.signup_email(self)
+        UserMailer.delay.signup_email(self)
         self.delay.add_to_aweber
     end
 

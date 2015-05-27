@@ -313,9 +313,9 @@ html.home{
 
 #refer .mammoth{
   width: 612px;
-  height: 394px;
+  height: 392px;
   background: url(/assets/refer/mammoth.jpg) 0 0 no-repeat;
-  background-size: 610px 394px;
+  background-size: 610px 393px;
   overflow: hidden;
   float: left;
 }
@@ -589,7 +589,7 @@ html.home{
   color: #074E6F;
   width: 100%;
   font-weight: 500;
-  margin-top: 500px;
+  margin-top: 50px;
 }
 
 #refer .prizes p.place span{
