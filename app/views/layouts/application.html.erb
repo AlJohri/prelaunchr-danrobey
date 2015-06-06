@@ -5,21 +5,21 @@
 <!--[if IE 9 ]>    <html class="ie9 <%= @bodyId %>"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
-          <title>The No Sacrifice Diet</title>
-        <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-        <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+  <title>The No Sacrifice Diet</title>
+  <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+  <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
 
-        <meta property="og:title" content="The No Sacrifice Diet"/>
-        <meta property="og:description" content="Share your unique link via email, Facebook or Twitter and earn No Sacrifice Diet products for each friend who signs up."/>
-        <meta property="og:image" content="<%= root_url + "assets/home/hero.jpg" %>"/>
-        <meta property="og:url" content="<%= root_url %>"/>
-        <%= stylesheet_link_tag "core.css", :media => "all" %>
-        <meta name="viewport" content="width=3000, initial-scale=1">
-        <%= csrf_meta_tags %>
+  <meta property="og:title" content="The No Sacrifice Diet"/>
+  <meta property="og:description" content="Share your unique link via email, Facebook or Twitter and earn No Sacrifice Diet products for each friend who signs up."/>
+  <meta property="og:image" content="<%= root_url + "assets/home/hero.jpg" %>"/>
+  <meta property="og:url" content="<%= root_url %>"/>
+  <%= stylesheet_link_tag "core.css", :media => "all" %>
+  <meta name="viewport" content="width=1280, initial-scale=1">
+  <%= csrf_meta_tags %>
 </head>
 <body id="<%= @bodyId %>">
 
-<%= yield %>
+  <%= yield %>
 
 
 </body>
