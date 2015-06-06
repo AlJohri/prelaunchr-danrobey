@@ -11,11 +11,11 @@
             <span class="need brandon">Shaving Is<br>Evolving</span>
         </div>
         <div class="share-wrap">
-          <p class="why brandon">Thank you for signing up.<br />Don't leave your friends behind</p>
+          <p class="why brandon">THE FUTURE OF WEIGHT LOSS IS HERE<br />DON'T LEAVE YOUR FRIENDS BEHIND</p>
             <p class="title brandon">INVITE FRIENDS &<br>Earn Products</p>
             <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn No Sacrifice Diet products for<br>each friend who signs up.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "Excited to get No Sacrifice Diet products - " %>
+            <% twitter_message = "Can't wait for @thenosacrificediet to launch. I am going to be #losingweightwithoutsacrfice for free." %>
             <div class="social-links">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=No Sacrifice Diet products" class="fb" target="_blank"></a>
                 <div class="sep"></div>
@@ -43,12 +43,6 @@
  %>
 
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
-        <% if referrals_count == 0 %>
-            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
-        <% else %>
-            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
-        <% end %>
-        <p class="check brandon">Keep checking</p>
 
     <div class="page-content">
         <p class="callout brandon">Here's How It Works:</p>
@@ -82,6 +76,14 @@
             end
 
         %>
+
+        <% if referrals_count == 0 %>
+            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+        <% else %>
+            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+        <% end %>
+        <p class="check brandon">Keep checking</p>
+
 
     </div>
 </div>
