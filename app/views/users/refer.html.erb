@@ -46,8 +46,8 @@
     <div class="page-content">
         <p class="callout brandon">Here's How It Works:</p>
         <ul class="products clearfix">
-          <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards"><%= image_tag("refer/logo.jpg") %></p>
-            <p style="text-transform: initial; font-weight: 100;text-align: justify;margin-left:10px">Medical science and technology converge for the first time to bring you weight loss, without sacrifice.<br>Eat the foods you love, lose 12 lbs evey 30 days.<br><br>(Exercise not required)</p>
+          <li class="title brandon"><p class="friends">Friends Who Have Joined</p><p class="rewards"><%= image_tag("refer/logo.jpg") %></p>
+            <p style="text-transform: initial; font-weight: 100;text-align: justify;margin-left:10px">Medical science and technology converge for the first time to bring you weight loss, without sacrifice.<br>Eat the foods you love, lose 12 lbs every 30 days.<br><br>(Exercise not required)</p>
           </li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">

@@ -461,10 +461,11 @@ html.home{
 
 #refer .prizes ul.products{
   height: 105px;
-  width: 100%;
+  width: 95%;
   margin-top: 30px;
   position: relative;
   z-index: 1;
+  margin-left:20px;
 }
 
 #refer .prizes .products li.title{
@@ -482,10 +483,11 @@ html.home{
 #refer .prizes .products li.title .friends{
   margin-top: 7px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 #refer .prizes .products li.title .rewards{
-  margin-top: 45px;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -493,7 +495,7 @@ html.home{
   height: 100%;
   color: #074E6F;
   width: 180px;
-  margin-right: 50px;
+  margin-right: 60px;
   float: left;
   position: relative;
 }
@@ -589,7 +591,7 @@ html.home{
   color: #074E6F;
   width: 100%;
   font-weight: 500;
-  margin-top: 440px;
+  margin-top: 480px;
 }
 
 #refer .prizes p.place span{
