@@ -314,7 +314,7 @@ html.home{
 #refer .mammoth{
   width: 612px;
   height: 392px;
-  background: url(/assets/refer/mammoth.jpg) 0 0 no-repeat;
+  background: url(/assets/refer/mammoth.gif) 0 0 no-repeat;
   background-size: 610px 393px;
   overflow: hidden;
   float: left;
@@ -395,10 +395,10 @@ html.home{
 }
 
 #refer .share-wrap .social-links .twit{
-  background: url(/assets/refer/twitter.jpg);
-  background-size: 37px 37px;
-  width: 37px;
-  height: 37px;
+  background: url(/assets/refer/twitter.png);
+  background-size: 35px 35px;
+  width: 35px;
+  height: 35px;
 }
 
 #refer .share-wrap .social-links .sep{

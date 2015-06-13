@@ -42,7 +42,7 @@ class User < ActiveRecord::Base
                                 <li>Smart Phone App Instant Access</li>
                                 <li>Fast Track One Hour Video</li>
                               </ul>
-                              <p>Your name will be permanently featured in the first chapter of the "No Sacrifice Diet Book" as an official contributor.</p>'
+                              <p>Your name featured in the Introduction of the "No Sacrifice Diet Book" as an official contributor.</p>'
         },
         {
             'count' => 50,
@@ -56,7 +56,7 @@ class User < ActiveRecord::Base
                                 <li>Limited Edition Author Autographed PDF Version Of 
 The No Sacrifice Diet Book</li>
                               </ul>
-                              <p>Your name will be permanently featured in the first chapter of the "No Sacrifice Diet Book" as an official contributor, and featured on the company website.</p>'
+                              <p>Your name featured in the Introduction of the "No Sacrifice Diet Book" as an official contributor, and featured on the company website.</p>'
         }
     ]
 
