@@ -27,3 +27,5 @@ gem 'capistrano-passenger', '0.0.2'
 gem 'capistrano3-delayed-job', '~> 1.0'
 
 gem "letter_opener", :group => :development
+
+gem 'test-unit'
