@@ -85,4 +85,5 @@ sudo service httpd start
 
 Helpful Links:
 - https://www.phusionpassenger.com/documentation/Users%20guide%20Apache.html
+- https://www.phusionpassenger.com/documentation/ServerOptimizationGuide.html
 - http://robmclarty.com/blog/how-to-setup-a-production-server-for-rails-4
