@@ -30,7 +30,8 @@ gem 'capistrano3-delayed-job', '~> 1.0'
 gem "letter_opener", :group => :development
 gem 'test-unit'
 
-group :test do
+group :test, :development do
     gem 'ruby-prof'
+    gem 'rack-mini-profiler'
 end
 
