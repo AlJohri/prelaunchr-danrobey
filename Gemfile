@@ -30,4 +30,3 @@ gem 'capistrano3-delayed-job', '~> 1.0'
 gem "letter_opener", :group => :development
 
 gem 'test-unit'
-gem 'unicorn'
