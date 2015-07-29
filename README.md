@@ -48,8 +48,8 @@ git clone git://github.com/sstephenson/ruby-build.git
 cd ruby-build
 ./install.sh
 rm -rf ~/tmp/ruby-build
-TMPDIR=~/tmp rbenv install 2.2.2
-rbenv global 2.2.2
+TMPDIR=~/tmp rbenv install 1.9.3-p551
+rbenv global 1.9.3-p551
 export PATH=$PATH:/usr/local/bin # also add to .bash_profile
 gem install bundler
 rbenv rehash
