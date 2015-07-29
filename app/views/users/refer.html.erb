@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<% 
+<%
     referrals_count = @user.referrals.count
 
     stops = User::REFERRAL_STEPS
@@ -38,7 +38,7 @@
         else
             stop["selected"] = false
         end
-    }   
+    }
  %>
 
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
@@ -68,11 +68,11 @@
             </div>
         </div>
 
-        <% 
+        <%
             words = ''
             if referrals_count == 1
                 words = 'friend has'
-            elsif 
+            elsif
                 words = 'friends have'
             end
 

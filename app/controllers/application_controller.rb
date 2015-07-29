@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
             end
 
             if request.env["HTTP_USER_AGENT"] and !request.env["HTTP_USER_AGENT"].include?("facebookexternalhit/1.1")
-                redirect_to proc { url_for(params.except(:ref)) }  
+                redirect_to proc { url_for(params.except(:ref)) }
             end
         end
     end

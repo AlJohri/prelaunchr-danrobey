@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
     belongs_to :referrer, :class_name => "User", :foreign_key => "referrer_id"
     has_many :referrals, :class_name => "User", :foreign_key => "referrer_id"
-    
+
     attr_accessible :email
 
     validates :email, :uniqueness => true, :format => { :with => /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/i, :message => "Invalid email format." }
@@ -53,7 +53,7 @@ class User < ActiveRecord::Base
                                 <li>No Sacrifice Diet Book</li>
                                 <li>Smart Phone App Instant Access (Apple Watch Version)</li>
                                 <li>Fast Track One Hour Video </li>
-                                <li>Limited Edition Author Autographed PDF Version Of 
+                                <li>Limited Edition Author Autographed PDF Version Of
 The No Sacrifice Diet Book</li>
                               </ul>
                               <p>Your name featured in the Introduction of the "No Sacrifice Diet Book" as an official contributor, and featured on the company website.</p>'
