@@ -11,7 +11,7 @@ http://thenosacrificediet.com
 touch config/application.yml
 bundle install
 bundle exec rake db:create db:schema:load db:seed
-bundle exec rails s
+bundle exec foreman start
 ```
 
 ## Deploy

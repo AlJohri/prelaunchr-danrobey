@@ -31,6 +31,8 @@ gem "letter_opener", :group => :development
 gem 'test-unit'
 
 group :test, :development do
+    gem 'foreman'
+    gem 'thin'
     gem 'ruby-prof'
     gem 'rack-mini-profiler'
 end
