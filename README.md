@@ -14,9 +14,14 @@ bundle exec rake db:create db:schema:load db:seed
 bundle exec foreman start
 ```
 
-## Deploy
+## Deploy to Production
 ```
 bundle exec cap production deploy
+```
+
+## Reset Production Database
+```
+bundle exec cap production db:reset
 ```
 
 ----------------------------------------------------------------
