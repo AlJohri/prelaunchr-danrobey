@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:panter/delayed_job_active_record.git
+  remote: https://github.com/panterch/delayed_job_active_record
   revision: 111a122cdc4d5cdae027691ef7c68c5a76470df7
   specs:
     delayed_job_active_record (4.0.0)
