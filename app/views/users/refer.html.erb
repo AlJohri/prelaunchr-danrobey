@@ -12,7 +12,7 @@
         <div class="share-wrap">
           <p class="why brandon">THE FUTURE OF WEIGHT LOSS IS HERE<br />DON'T LEAVE YOUR FRIENDS BEHIND</p>
             <p class="title brandon">INVITE FRIENDS &<br>Earn Products</p>
-            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn No Sacrifice Diet products for<br>each friend who signs up.</p>
+            <p class="subtitle brandon">Just click on the Facebook, Twitter or Instagram icon below to share your unique link and earn No Sacrifice Diet products for each friend who signs up. Or copy and paste your link and send by email.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
             <% twitter_message = "Can't wait for @nosacrificediet to launch. I am going to be eating the foods I love and losing weight without any sacrifice...for Free!" %>
             <div class="social-links">
@@ -47,7 +47,7 @@
         <p class="callout brandon">Here's How It Works:</p>
         <ul class="products clearfix">
           <li class="title brandon"><p class="friends">Friends Who Have Joined</p><p class="rewards"><%= image_tag("refer/logo.jpg") %></p>
-            <p style="text-transform: initial; font-weight: 100;text-align: justify;margin-left:10px">Breakthrough Medical Science and Internet Technology converge for the first time ever to bring you weight loss, without sacrifice.<br><br>Eat the foods you love, lose 12 Lbs every 30 days.<br><br>(*Exercise not required)</p>
+            <p style="text-transform: initial; font-weight: 100;text-align: left;margin-left:10px">Breakthrough Medical Science and Internet Technology converge for the first time ever to bring you weight loss, without sacrifice.<br><br>Eat the foods you love, lose 12 Lbs every 30 days.<br><br>(*Exercise not required)</p>
           </li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
