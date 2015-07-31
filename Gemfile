@@ -17,7 +17,8 @@ end
 gem 'aweber'
 gem 'figaro'
 
-gem 'delayed_job_active_record'
+# gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', :git => 'git@github.com:panter/delayed_job_active_record.git'
 gem "delayed_job_web"
 gem "daemons"
 
