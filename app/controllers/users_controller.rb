@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     before_filter :skip_first_page, :only => :new
 
-    caches_page :new
+    # caches_page :new
 
     def new
         @bodyId = 'home'
