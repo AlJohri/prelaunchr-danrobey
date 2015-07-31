@@ -75,7 +75,7 @@ The No Sacrifice Diet Book</li>
       oauth.authorize_with_access(ENV['AWEBER_APP_ACCESS_TOKEN'], ENV['AWEBER_APP_ACCESS_SECRET'])
       aweber = AWeber::Base.new(oauth)
       list_id = 3870558
-      new_subscriber = {"email": self.email}
+      new_subscriber = {"email" => self.email}
       aweber.account.lists[list_id].subscribers.create(new_subscriber)
     end
 
