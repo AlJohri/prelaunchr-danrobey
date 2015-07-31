@@ -34,6 +34,7 @@ group :test, :development do
 	gem 'letter_opener'
     gem 'foreman'
     gem 'thin'
+    gem 'debugger'
     gem 'ruby-prof'
     gem 'rack-mini-profiler'
 end
