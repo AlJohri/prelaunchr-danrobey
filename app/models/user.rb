@@ -65,13 +65,17 @@ The No Sacrifice Diet Book</li>
         self.delay.add_to_aweber
     end
 
+    # for consumer key and consumer secret:
+    # "https://labs.aweber.com/apps"
+    # for access token and access secret:
+    # "https://auth.aweber.com/1.0/oauth/authorize_app/" + ENV['AWEBER_APP_ID']
+    # split on pipe?
     def add_to_aweber
       oauth = AWeber::OAuth.new(ENV['AWEBER_APP_CONSUMER_KEY'], ENV['AWEBER_APP_CONSUMER_SECRET'])
       oauth.authorize_with_access(ENV['AWEBER_APP_ACCESS_TOKEN'], ENV['AWEBER_APP_ACCESS_SECRET'])
       aweber = AWeber::Base.new(oauth)
       list_id = 3870558
-      new_subscriber = {}
-      new_subscriber["email"] = self.email
+      new_subscriber = {email: self.email}
       aweber.account.lists[list_id].subscribers.create(new_subscriber)
     end
 
