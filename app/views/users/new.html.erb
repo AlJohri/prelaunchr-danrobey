@@ -11,7 +11,7 @@
         <p class="again brandon">Thank You Again!</p>
     <% else %>
         <p class="invite byline brandon">Be the first to know</p>
-        <%= form_for @user, :url => { :action => "create" } do |f| %>
+        <%= form_for @user, :url => { :action => "create" }, :authenticity_token => true do |f| %>
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
             <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
         <% end %>
