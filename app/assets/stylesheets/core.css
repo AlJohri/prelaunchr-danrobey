@@ -381,6 +381,7 @@ html.home{
   height: 39px;
   margin: 25px auto 0;
   text-align: center;
+  margin-top: 10px;
 }
 
 #refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
