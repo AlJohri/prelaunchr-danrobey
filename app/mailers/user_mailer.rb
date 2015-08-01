@@ -5,6 +5,11 @@ class UserMailer < ActionMailer::Base
         @user = user
         @twitter_message = "Can't wait for @nosacrificediet to launch. I am going to be #losingweightwithoutsacrfice for free."
 
-        mail(:to => user.email, :subject => "Thanks for signing up!")
+        mail(
+        	:to => user.email,
+        	:subject => "Thanks for signing up!",
+        	:template_path => "user_mailer",
+        	:template_name => "signup_email"
+        )
     end
 end
