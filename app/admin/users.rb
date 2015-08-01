@@ -1,5 +1,5 @@
-# Export to CSV with the referrer_id
 ActiveAdmin.register User do
+
   csv do
     column :id
     column :email
@@ -8,7 +8,5 @@ ActiveAdmin.register User do
     column :created_at
     column :updated_at
   end
-
-  actions :index, :show
 
 end
