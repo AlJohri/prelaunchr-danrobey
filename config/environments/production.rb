@@ -63,7 +63,7 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { :host => 'host.thepowerofpositivehabits.com' }
+  config.action_mailer.default_url_options = { :host => 'thenosacrificediet.com' }
   config.action_mailer.delivery_method = :sendmail
   # https://github.com/mikel/mail/issues/70#issuecomment-2639987
   config.action_mailer.sendmail_settings = {
