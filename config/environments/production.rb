@@ -65,6 +65,10 @@ Prelaunchr::Application.configure do
 
   config.action_mailer.default_url_options = { :host => 'host.thepowerofpositivehabits.com' }
   config.action_mailer.delivery_method = :sendmail
+  # https://github.com/mikel/mail/issues/70#issuecomment-2639987
+  config.action_mailer.sendmail_settings = {
+    :arguments => "-i"
+  }
   config.action_mailer.perform_deliveries = true
 
   # Log the query plan for queries taking more than this (works
