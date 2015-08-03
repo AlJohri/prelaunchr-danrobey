@@ -653,7 +653,15 @@ html.home{
 
 /** copied from bootstrap-responsive v2.3.2 **/
 
-@media (min-width: 768px) and (max-width: 979px) {
+/*@media (min-width: 768px) and (max-width: 979px) {
+
+  .progress{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    transform: rotate(-90deg);
+  }
+
   .hidden-desktop {
     display: inherit !important;
   }
@@ -682,3 +690,4 @@ html.home{
     display: none !important;
   }
 }
+*/
