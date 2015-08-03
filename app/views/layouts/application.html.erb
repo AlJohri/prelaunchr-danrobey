@@ -14,7 +14,9 @@
   <meta property="og:image" content="<%= root_url + "assets/home/hero.jpg" %>"/>
   <meta property="og:url" content="<%= root_url %>"/>
   <%= stylesheet_link_tag "core.css", :media => "all" %>
-  <meta name="viewport" content="width=1280">
+  <!-- <meta name="viewport" content="width=1280"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <%= csrf_meta_tags %>
 </head>
 <body id="<%= @bodyId %>">
@@ -27,3 +29,4 @@
 
 </body>
 </html>
+
