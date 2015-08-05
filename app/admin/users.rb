@@ -4,7 +4,7 @@ ActiveAdmin.register User do
     column :id
     column :email
     column :referral_code
-    column :referrer_id
+    column :referrer
     column :referrals_count
     column :created_at
     column :updated_at
