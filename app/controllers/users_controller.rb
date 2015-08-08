@@ -32,7 +32,7 @@ class UsersController < ApplicationController
                 )
             end
 
-            if fraud_protection == false && cur_ip.count > 2
+            if @@fraud_protection == false && cur_ip.count > 2
                 return redirect_to root_path
             else
                 cur_ip.count = cur_ip.count + 1
