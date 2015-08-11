@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     before_filter :skip_first_page, :only => :new
 
-    @@fraud_protection = false
+    @@fraud_protection = true
 
     # caches_page :new
 
